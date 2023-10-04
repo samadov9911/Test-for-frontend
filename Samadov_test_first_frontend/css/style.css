@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    color: #717377;
+ }
+ .testimonials {
+    max-width: 800px;
+    margin: auto;
+ }
+
+ .scroller {
+    overflow-x: scroll;
+    display: flex;
+ }
+ .item {
+    min-width: 100%;
+    min-height: 200px; /* To start with */
+    background-color: #EDF2F7; /* For demo */
+ }
+ .scroller {
+    /* Здесь существующие стили */
+    scroll-snap-type: x mandatory;
+ }
+ .item {
+    /* Здесь существующие стили */
+    scroll-snap-align: center;
+ }
+
+ .testimonials {
+    /* Здесь существующие стили */
+    padding: 15px;
+    text-align: center;
+ }
+ .item {
+    /* Здесь существующие стили */
+    background-color: white; /* Change the value to white */
+    margin-bottom: 10px;
+    padding: 0 50px;
+ }
+ .item img {
+    margin: 15px auto -60px;
+    width: 120px;
+    height: 120px;
+    border: solid 4px #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+ }
+ .card {
+    background-color: rgb(237, 242, 247);
+    padding: 80px 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+ }
+ .card p {
+    font-style: italic;
+    line-height: 1.6;
+ }
+ .card span {
+    display: block;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+ }
+
+ .testimonials {
+    /* Здесь существующие стили */
+    position: relative;
+ }
+ .testimonials .btn {
+    position: absolute;
+    top: 50%;
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(95, 106, 117, 0.3);
+    z-index: 1;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+ }
+ .testimonials .btn:hover{
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer;
+ }
+ .testimonials .btn.next {
+    right: 30px;
+ }
+ .testimonials .btn.prev {
+    left: 30px;
+ }
+
+ @media screen (max-width: 480px) {
+.item {
+    padding: 0px 30px;
+}
+.card {
+    padding: 80px 30px 30px;
+}
+}
